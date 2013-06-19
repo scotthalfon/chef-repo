@@ -1,0 +1,20 @@
+{
+  "name": "VSDeveloper",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[chef_handler]",
+    "recipe[windows]",
+    "recipe[ms_dotnet45]",
+    "recipe[powershell]",
+    "recipe[chocolatey]",
+    "recipe[my_cookbook]"
+  ],
+  "env_run_lists": {
+  }
+}
